@@ -7,7 +7,9 @@ var database = require('./config/database');
 // var bodyParser = require('body-parser');
 // var methodOverride = require('method-override');
 
-con = mongoose.connect(database.localUrl)
+con = mongoose.connect(database.localUrl);
+
+console.log(con);
 
 app.use(express.static('./public'));
 // app.use(morgan('dev'));

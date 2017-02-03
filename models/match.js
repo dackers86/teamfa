@@ -14,11 +14,11 @@ module.exports = mongoose.model('Match', {
     default: 0
   },
   team_a_name: {
-    type: Number,
+    type: String,
     default: 0
   },
   team_b_name: {
-    type: Number,
+    type: String,
     default: 0
   },
   created_at: {

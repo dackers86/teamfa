@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 module.exports = mongoose.model('Competition', {
   id: {
-    type: String,
+    type: Number,
     default: ''
   },
   area_id: {

@@ -1,1 +1,39 @@
-Running the Express Application
+<html ng-app="app">
+
+<head>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+  <script src="js/controllers/main.js"></script>
+  <script src="js/services/data.js"></script>
+  <script src="js/core.js"></script>
+</head>
+
+
+<body ng-controller="mainController">
+
+  <div style="float:left">
+    <ul>
+      <li class="checkbox" ng-repeat="area in areas">
+        <div ng-click="getCompetitions(area.id)">{{area.name}}</div>
+      </li>
+    </ul>
+  </div>
+
+  <div style="float:left">
+    <ul>
+      <li class="checkbox" ng-repeat="competition in competitions">
+        <div ng-click="getMatches(competition.id)">{{competition.name}}</div>
+      </li>
+    </ul>
+  </div>
+
+  </div <div style="float:right">
+  <ul>
+    <li class="checkbox" ng-repeat="match in matches">
+      <div>{{match.team_a_name}} vs {{match.team_b_name}}</div>
+    </li>
+  </ul>
+  </div>
+
+</body>
+
+</html>
